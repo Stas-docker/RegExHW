@@ -11,7 +11,7 @@ public class InformationAnalyzer {
     public void runAnalysis() {
         final ConsoleReader reader = new StringReader();
         Menu.startMenu();
-        String text = reader.readText();
+        final String text = reader.readText();
         showOrderUUID(text);
         showUserEmail(text);
         showOrderTimes(text);
