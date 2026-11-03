@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Utils {
     private static final Pattern ORDER_UUID_PATTERN = Pattern.compile("orderUUID=[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12}");
-    private static final Pattern USER_EMAIL_PATTERN = Pattern.compile("\\b[\\w._%+-]+@[a-zA-Z\\d.-]+\\.[a-zA-Z]{2,}\\b");
+    private static final Pattern USER_EMAIL_PATTERN = Pattern.compile("\\b[\\w._%+-]+@[\\w.-]+\\.\\w{2,}\\b");
     private static final Pattern ORDER_TIMES_PATTERN = Pattern.compile("total number of orders successfully processed:\\s*\\[\\d+\\]",
             Pattern.CASE_INSENSITIVE);
 
